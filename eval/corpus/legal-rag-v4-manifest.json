@@ -1,0 +1,18 @@
+{
+  "dataset_id": "legal-rag-v4",
+  "generated_at": "2026-08-16T17:28:37+08:00",
+  "total_cases": 100,
+  "dev_cases": 66,
+  "test_cases": 34,
+  "answerable_cases": 100,
+  "reused_questions": 0,
+  "qdrant_point_count": 5040,
+  "query_type_distribution": {
+    "": 100
+  },
+  "source_count": 21,
+  "hard_negative_strategy": [
+    "same_source_adjacent_article",
+    "same_article_number_cross_source"
+  ]
+}

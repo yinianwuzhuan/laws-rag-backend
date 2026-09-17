@@ -1,0 +1,4 @@
+/data/
+/models/
+/.venv-reranker/
+/src/main/resources/application-local.yaml

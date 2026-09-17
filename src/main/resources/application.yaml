@@ -1,0 +1,73 @@
+spring:
+  application:
+    name: laws-rag
+  profiles:
+    active: local
+server:
+  port: 8081
+laws:
+  agentic-rag:
+    enabled: ${AGENTIC_RAG_ENABLED:true}
+    max-history-turns: ${AGENTIC_RAG_MAX_HISTORY_TURNS:6}
+    answer-history-turns: ${AGENTIC_RAG_ANSWER_HISTORY_TURNS:4}
+    iterative:
+      enabled: ${ITERATIVE_LEGAL_AGENT_ENABLED:true}
+      # 复杂咨询最多拆为3个可独立检索的法律事项；单一问题仍执行一次证据完整性检查。
+      max-sub-questions: ${ITERATIVE_AGENT_MAX_SUB_QUESTIONS:3}
+      candidate-top-k: ${ITERATIVE_AGENT_CANDIDATE_TOP_K:10}
+      per-question-final-top-k: ${ITERATIVE_AGENT_FINAL_TOP_K:3}
+      # 完整性/矛盾检查后，只允许针对证据缺口补查一轮、最多2个查询。
+      max-follow-up-queries: ${ITERATIVE_AGENT_MAX_FOLLOW_UP_QUERIES:2}
+      max-total-evidence: ${ITERATIVE_AGENT_MAX_TOTAL_EVIDENCE:9}
+    official-search:
+      enabled: ${OFFICIAL_LEGAL_SEARCH_ENABLED:true}
+      # 默认使用Bing RSS发现候选URL；搜索结果摘要不直接作为证据，必须抓取官方正文。
+      endpoint: ${OFFICIAL_LEGAL_SEARCH_ENDPOINT:https://www.bing.com/search?format=rss&q=}
+      allowed-domains: ${OFFICIAL_LEGAL_SEARCH_DOMAINS:flk.npc.gov.cn,gov.cn,court.gov.cn,spp.gov.cn,moj.gov.cn}
+      max-queries: ${OFFICIAL_LEGAL_SEARCH_MAX_QUERIES:2}
+      max-results-per-query: ${OFFICIAL_LEGAL_SEARCH_MAX_RESULTS:5}
+      max-pages-to-fetch: ${OFFICIAL_LEGAL_FETCH_MAX_PAGES:5}
+      timeout-seconds: ${OFFICIAL_LEGAL_SEARCH_TIMEOUT_SECONDS:8}
+    memory:
+      max-turns: ${AGENTIC_RAG_MEMORY_MAX_TURNS:10}
+      ttl-minutes: ${AGENTIC_RAG_MEMORY_TTL_MINUTES:120}
+  evaluation:
+    dataset-id: labor-criminal-v1
+    dataset-pattern: classpath*:eval/datasets/*.jsonl
+  generation-evaluation:
+    success-threshold: ${GENERATION_SUCCESS_THRESHOLD:80}
+    judge-max-attempts: ${GENERATION_JUDGE_MAX_ATTEMPTS:3}
+    judge-initial-backoff-ms: ${GENERATION_JUDGE_INITIAL_BACKOFF_MS:1000}
+    # 学习阶段打印 Judge 完整请求和原始响应；生产环境建议设为 false。
+    judge-log-details: ${GENERATION_JUDGE_LOG_DETAILS:false}
+  retrieval:
+    candidate-top-k: 10
+    final-top-k: 5
+    query-rewrite:
+      enabled: ${QUERY_REWRITE_ENABLED:true}
+    hybrid:
+      collection-name: ${QDRANT_HYBRID_COLLECTION:laws_hybrid_v1}
+      dense-dimensions: 3072
+      channel-top-k: 20
+    reranker:
+      enabled: ${RERANKER_ENABLED:true}
+      # onnx=本地模型；dashscope=阿里云百炼qwen3-rerank。
+      provider: ${RERANKER_PROVIDER:dashscope}
+      apply-by-default: ${RERANKER_APPLY_BY_DEFAULT:true}
+      model-path: ${RERANKER_MODEL_PATH:models/reranker}
+      max-length: 512
+      batch-size: 10
+      # CPU推理固定线程数，降低ONNX默认占满全部逻辑核心造成的尾延迟波动。
+      intra-op-threads: ${RERANKER_INTRA_OP_THREADS:8}
+      inter-op-threads: ${RERANKER_INTER_OP_THREADS:1}
+      # 学习阶段打印每次重排的问题、候选法条全文、前后排名和分数；生产环境建议设为 false。
+      log-details: ${RERANKER_LOG_DETAILS:false}
+      dashscope:
+        base-url: ${RERANKER_DASHSCOPE_BASE_URL:${AI_DASHSCOPE_CHAT_BASE_URL:https://llm-m3s4eywdhh8on50o.cn-beijing.maas.aliyuncs.com}}
+        path: ${RERANKER_DASHSCOPE_PATH:/compatible-api/v1/reranks}
+        model: ${RERANKER_DASHSCOPE_MODEL:qwen3-rerank}
+        instruct: ${RERANKER_DASHSCOPE_INSTRUCT:Given a legal research query, retrieve relevant legal provisions that answer the query.}
+        timeout-seconds: ${RERANKER_TIMEOUT_SECONDS:15}
+        max-attempts: ${RERANKER_MAX_ATTEMPTS:2}
+        initial-backoff-ms: ${RERANKER_INITIAL_BACKOFF_MS:300}
+        fallback-enabled: ${RERANKER_FALLBACK_ENABLED:true}

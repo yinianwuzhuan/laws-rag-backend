@@ -1,0 +1,67 @@
+{
+  "corpus_id": "civil-code-v1",
+  "source_name": "中华人民共和国民法典",
+  "passed_date": "2020-05-28",
+  "effective_date": "2021-01-01",
+  "chunk_unit": "article",
+  "article_count": 1260,
+  "business_id_pattern": "{source_type}_{normalized_source_name}_{article_no_arabic}_{chunk_index}",
+  "files": [
+    {
+      "path": "docs/civil-and-commercial/civil-code/00-supplementary.md",
+      "article_count": 2,
+      "first_article": "第一千二百五十九条",
+      "last_article": "第一千二百六十条",
+      "sha256": "7009ab0c9e148253f77c78cc8f336a30520923451472eb6359d63978e7417a7f"
+    },
+    {
+      "path": "docs/civil-and-commercial/civil-code/01-general-principles.md",
+      "article_count": 204,
+      "first_article": "第一条",
+      "last_article": "第二百零四条",
+      "sha256": "580203f0f88182659176fd412ee1efcedb6c36af3e439fde6d3d9b7af5eb5492"
+    },
+    {
+      "path": "docs/civil-and-commercial/civil-code/02-property-rights.md",
+      "article_count": 258,
+      "first_article": "第二百零五条",
+      "last_article": "第四百六十二条",
+      "sha256": "9dc3cd0a4a57951b8418f6a3bd47371832fc422312dac483e9aaf8c38918bee9"
+    },
+    {
+      "path": "docs/civil-and-commercial/civil-code/03-contracts.md",
+      "article_count": 526,
+      "first_article": "第四百六十三条",
+      "last_article": "第九百八十八条",
+      "sha256": "2f48f23b1dd9ac6422116756a7cf733f25865a21b40af3ae7e9564b88e292fca"
+    },
+    {
+      "path": "docs/civil-and-commercial/civil-code/04-personality-rights.md",
+      "article_count": 51,
+      "first_article": "第九百八十九条",
+      "last_article": "第一千零三十九条",
+      "sha256": "b175e1e23e7d8dce81f31079cf016655d000aed8b358357dd5dc5958c29dec49"
+    },
+    {
+      "path": "docs/civil-and-commercial/civil-code/05-marriage-and-family.md",
+      "article_count": 79,
+      "first_article": "第一千零四十条",
+      "last_article": "第一千一百一十八条",
+      "sha256": "d60488427616ff45c7383634f5d8a52074ad3ff61a806987ba28fb9f0b979078"
+    },
+    {
+      "path": "docs/civil-and-commercial/civil-code/06-inheritance.md",
+      "article_count": 45,
+      "first_article": "第一千一百一十九条",
+      "last_article": "第一千一百六十三条",
+      "sha256": "87a9a6c1b948cdd5c37f068d75e7fb544977d96e27d73d0a74f3a69cafbd5841"
+    },
+    {
+      "path": "docs/civil-and-commercial/civil-code/07-tort-liability.md",
+      "article_count": 95,
+      "first_article": "第一千一百六十四条",
+      "last_article": "第一千二百五十八条",
+      "sha256": "52fbdbc9212e63fb9c6bf7c0a3775bef1827a3e176f9a479e8867abc9719cf67"
+    }
+  ]
+}

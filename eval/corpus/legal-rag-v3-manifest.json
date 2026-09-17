@@ -1,0 +1,26 @@
+{
+  "dataset_id": "legal-rag-v3",
+  "generated_at": "2026-08-16T16:53:20+08:00",
+  "qdrant_collection": "laws",
+  "qdrant_point_count": 5040,
+  "source_count": 34,
+  "base_datasets": [
+    "civil-code-v2",
+    "labor-criminal-v1"
+  ],
+  "total_cases": 300,
+  "dev_cases": 200,
+  "test_cases": 100,
+  "answerable_cases": 296,
+  "unanswerable_cases": 4,
+  "bm25_challenge_distribution": {
+    "exact_article": 25,
+    "exact_term": 25,
+    "numeric_condition": 25,
+    "negation_exception": 25
+  },
+  "hard_negative_strategy": [
+    "same_source_adjacent_article",
+    "same_article_number_cross_source"
+  ]
+}

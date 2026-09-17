@@ -1,0 +1,62 @@
+spring:
+  ai:
+    dashscope:
+      api-key: ${AI_DASHSCOPE_API_KEY}
+      chat:
+        # qwen3.7-plus 使用百炼工作空间专属 MaaS 地址，例如：
+        # https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com
+        base-url: ${AI_DASHSCOPE_CHAT_BASE_URL:https://llm-m3s4eywdhh8on50o.cn-beijing.maas.aliyuncs.com}
+        completions-path: ${AI_DASHSCOPE_CHAT_COMPLETIONS_PATH:/api/v1/services/aigc/multimodal-generation/generation}
+        options:
+          model: ${AI_DASHSCOPE_CHAT_MODEL:qwen3.7-plus}
+          multi-model: ${AI_DASHSCOPE_CHAT_MULTI_MODEL:true}
+      embedding:
+        options:
+          model: text-embedding-v4
+    openai:
+      api-key: ${OPENAI_API_KEY:disabled}
+      chat:
+        options:
+          model: gpt-4o
+      embedding:
+        options:
+          model: text-embedding-3-large
+          dimensions: 3072
+    openrouter:
+      api-key: ${OPENROUTER_API_KEY:disabled}
+      base-url: https://openrouter.ai/api
+      chat:
+        options:
+          model: openai/gpt-4o-mini
+      embedding:
+        options:
+          model: openai/text-embedding-3-large
+          dimensions: 3072
+    vectorstore:
+      qdrant:
+        host: ${QDRANT_HOST}
+        port: ${QDRANT_PORT:6334}
+        uses-tls: false
+        collection-name: ${QDRANT_COLLECTION:laws}
+        initialize-schema: true
+    # 生成评测 Judge 使用独立的 OpenAI Responses API 中转站；不影响 OpenRouter Embedding。
+    judge-relay:
+      api-key: ${CF_API_FAN_API_KEY:xxx}
+#      base-url: ${CF_API_FAN_BASE_URL:https://cf.api.fan/v1/responses}
+      base-url: ${CF_API_FAN_BASE_URL:https://www.packyapi.ai/v1/responses}
+      model: ${GENERATION_JUDGE_MODEL:gpt-5.5}
+
+logging:
+  level:
+    org.example.lawsrag: info
+
+# 生产环境关闭 API 文档
+knife4j:
+  enable: false
+
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
+

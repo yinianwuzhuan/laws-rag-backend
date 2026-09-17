@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="001e8db8-2ba5-4e5e-b58e-e168c76db464" name="更改" comment="计算token消耗">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/FullLawCorpusImportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/FullLawCorpusImportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/LawChatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/LawChatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/LawDocumentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/LawDocumentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/LawMarkdownParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/LawMarkdownParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/LawSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/LawSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/QdrantContentHashIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/QdrantContentHashIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/QdrantHybridStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lawsrag/service/QdrantHybridStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/lawsrag/service/LawMarkdownParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/lawsrag/service/LawMarkdownParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/lawsrag/service/LawSearchServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/lawsrag/service/LawSearchServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/lawsrag/service/QdrantContentHashIndexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/lawsrag/service/QdrantContentHashIndexTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Java/jproject/laws-rag-backend" value="3DHs4rOWN9MqNzXX3Lit0Bq2rlP" />
+    </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="28628" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yinianwuzhuan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:yinianwuzhuan/laws-rag-backend.git&quot;,
+    &quot;accountId&quot;: &quot;ff8da696-03df-459c-bd61-0b03f8e52a51&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="$PROJECT_DIR$/../../environment/apache-maven-3.8.4" />
+        <option name="localRepository" value="C:\Java\environment\apache-maven-3.8.4\maven-repo" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="C:\Java\environment\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3DHs4rOWN9MqNzXX3Lit0Bq2rlP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.QdrantMetadataMigrationTest.migrateStoredPayloads.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.LawsRagApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Spring Boot.LawsRagApplication">
+    <configuration name="QdrantMetadataMigrationTest.migrateStoredPayloads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="laws-rag-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.lawsrag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.lawsrag" />
+      <option name="MAIN_CLASS_NAME" value="org.example.lawsrag.QdrantMetadataMigrationTest" />
+      <option name="METHOD_NAME" value="migrateStoredPayloads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LawsRagApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="laws-rag-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.lawsrag.LawsRagApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.lawsrag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.LawsRagApplication" />
+        <item itemvalue="JUnit.QdrantMetadataMigrationTest.migrateStoredPayloads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="001e8db8-2ba5-4e5e-b58e-e168c76db464" name="更改" comment="" />
+      <created>1777950143011</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777950143011</updated>
+    </task>
+    <task id="LOCAL-00001" summary="临时代码提交">
+      <option name="closed" value="true" />
+      <created>1786612292695</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1786612292696</updated>
+    </task>
+    <task id="LOCAL-00002" summary="准备正式提交">
+      <option name="closed" value="true" />
+      <created>1786613779421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1786613779421</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改端口">
+      <option name="closed" value="true" />
+      <created>1786613909556</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1786613909556</updated>
+    </task>
+    <task id="LOCAL-00004" summary="测试自动发布">
+      <option name="closed" value="true" />
+      <created>1786617568976</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1786617568976</updated>
+    </task>
+    <task id="LOCAL-00005" summary="完成黄金测评集和基础测评">
+      <option name="closed" value="true" />
+      <created>1786804781011</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1786804781011</updated>
+    </task>
+    <task id="LOCAL-00006" summary="完成混合检索和问题重写功能">
+      <option name="closed" value="true" />
+      <created>1786898936809</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1786898936809</updated>
+    </task>
+    <task id="LOCAL-00007" summary="完成部分系统优化以及整体系统使用体验优化">
+      <option name="closed" value="true" />
+      <created>1787033991231</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1787033991231</updated>
+    </task>
+    <task id="LOCAL-00008" summary="完成基础agent版本">
+      <option name="closed" value="true" />
+      <created>1787072064932</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1787072064932</updated>
+    </task>
+    <task id="LOCAL-00009" summary="准备二次发布了">
+      <option name="closed" value="true" />
+      <created>1787115133843</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1787115133843</updated>
+    </task>
+    <task id="LOCAL-00010" summary="计算token消耗">
+      <option name="closed" value="true" />
+      <created>1787285418407</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1787285418407</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="临时代码提交" />
+    <MESSAGE value="准备正式提交" />
+    <MESSAGE value="修改端口" />
+    <MESSAGE value="测试自动发布" />
+    <MESSAGE value="完成黄金测评集和基础测评" />
+    <MESSAGE value="完成混合检索和问题重写功能" />
+    <MESSAGE value="完成部分系统优化以及整体系统使用体验优化" />
+    <MESSAGE value="完成基础agent版本" />
+    <MESSAGE value="准备二次发布了" />
+    <MESSAGE value="计算token消耗" />
+    <option name="LAST_COMMIT_MESSAGE" value="计算token消耗" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
